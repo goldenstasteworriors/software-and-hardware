@@ -14,7 +14,7 @@
 
 一般不会这样用变量，直接用宏`#define pointer (volatile unsigned int *)0x40028000` 后面的用法是一样的(宏定义记得加上volatile)
 
-
+ 
 
 ### GPIO
 
