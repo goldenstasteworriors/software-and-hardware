@@ -10,15 +10,32 @@ C:\Users\86180\Desktop\KEIL project\USART
 
 魔法棒-Target-使用microlib
 
-main.c 25-31关于寄存器的宏定义+一些要用的引用
+main.c 27-31关于寄存器的宏定义+一些要用的引用
 
-main.c 95 开启接收中断(其实是我们的发送)
+main.c 97 开启接收中断(其实是我们的发送)
 
-main.c 147-168 (USER CODE 4) 接收回调函数
+main.c 153-176 (USER CODE 4) 接收回调函数
 
-stm32f1xx_hal.c 37-49 printf,scanf的重定向(不想用这两个函数的可以直接用HAL_UART_Transmit)
+usart.c  142-154 printf,scanf的重定向(不想用这两个函数的可以直接用HAL_UART_Transmit)
 
 
+
+## DMA串口空闲接收
+
+除USART外：
+
+删掉main.c 98
+
+main.c 32
+
+main.c 99
+
+main.c 178-186
+
+```c
+HAL_StatusTypeDef HAL_UARTEx_ReceiveToIdle_DMA(UART_HandleTypeDef *huart, uint8_t *pData, uint16_t Size)//在DMA模式下接收一定数量的数据，直到接收到预期数量的数据或发生空闲事件
+HAL_UARTEx_RxEventCallback(UART_HandleTypeDef *huart, uint16_t Size)//串口空闲中断处理函数
+```
 
 ## OLED
 
@@ -44,3 +61,15 @@ main.c 99 OLED初始化
 2. 另存为BMP的单色图
 3. DrawBMP函数中对角线的x,y差值应该正好是像素值，不然会被缩短/拉长
 4. 记得在main中宏部分加上extern const unsigned char=对应位图名，不然报错
+
+
+
+## 同系列移植
+
+1. 更换启动文件
+2. 魔术棒->Target 修改芯片型号
+3. 魔术棒->c/c++ 修改define
+
+
+
+后面再出问题就到定义/网上查

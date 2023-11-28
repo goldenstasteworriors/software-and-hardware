@@ -345,6 +345,10 @@ DMA作为一个外设，不过CPU，也不在APB里，直接接总线矩阵，�
 
 DMA模式中USART_RX是外设->内存，USART_TX是内存->外设
 
+在USART使用时用对应的中断函数（HAL_UARTEx_ReceiveToIdle_DMA）和中断处理处理函数（HAL_UARTEx_RxEventCallback）即可
+
+
+
 
 
 
@@ -357,3 +361,30 @@ DMA模式中USART_RX是外设->内存，USART_TX是内存->外设
 
 配置略
 
+#### 基本函数：
+
+1. 写：` HAL_I2C_Master_Transmit(I2C_HandleTypeDef *hi2c, uint16_t DevAddress, uint8_t *pData, uint16_t Size, uint32_t Timeout);`
+
+2. 读：`HAL_I2C_Master_Receive(I2C_HandleTypeDef *hi2c, uint16_t DevAddress, uint8_t *pData, uint16_t Size, uint32_t Timeout);`
+
+3. 写多个数据：
+
+   ```c
+   
+   HAL_I2C_Mem_Write(I2C_HandleTypeDef *hi2c, uint16_t DevAddress, uint16_t MemAddress, uint16_t MemAddSize, uint8_t *pData, uint16_t Size, uint32_t Timeout);
+   /* 第1个参数为I2C操作句柄
+      第2个参数为从机设备地址
+      第3个参数为从机寄存器地址
+      第4个参数为从机寄存器地址长度
+      第5个参数为发送的数据的起始地址
+      第6个参数为传输数据的大小
+      第7个参数为操作超时时间 　　*/
+   ```
+
+4.  
+
+5. 
+
+### 9.30
+
+RTC
