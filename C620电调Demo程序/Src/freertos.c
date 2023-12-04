@@ -95,7 +95,7 @@ void MX_FREERTOS_Init(void) {
 }
 
 #define CAN_CONTROL	1//const current control 
-#define PWM_CONTROL	//const speed control
+//#define PWM_CONTROL	//const speed control
 int set_v,set_spd[4];
 /* StartDefaultTask function */
 void StartDefaultTask(void const * argument)
@@ -126,62 +126,62 @@ void StartDefaultTask(void const * argument)
   /* Infinite loop */
   for(;;)
   {
-		
-		#if defined CAN_CONTROL
-		  
-			for(int i=0; i<4; i++)
-			{
-				pid_calc(&pid_spd[i], moto_chassis[i].speed_rpm, set_spd[i]);
-			}
-			set_moto_current(&hcan1, pid_spd[0].pos_out, 
-									pid_spd[1].pos_out,
-									pid_spd[2].pos_out,
-									pid_spd[3].pos_out);
-		  
-//		#elif defined PWM_CONTROL
-//			__HAL_TIM_SetCompare(&htim5, TIM_CHANNEL_1, 1000+set_spd[0]);//spd range[0,999]
-//			__HAL_TIM_SetCompare(&htim5, TIM_CHANNEL_2, 1000+set_spd[1]);
-//			__HAL_TIM_SetCompare(&htim5, TIM_CHANNEL_3, 1000+set_spd[2]);
-//			__HAL_TIM_SetCompare(&htim5, TIM_CHANNEL_4, 1000+set_spd[3]);
-//			//TIM5->CCR1 = set_spd[0];
-		#endif
-	
-	static int key_sta,key_cnt;
-	switch(key_sta)
-	{
-		case 0:	//no key
-			if( 0 == HAL_GPIO_ReadPin(KEY0_GPIO_Port, KEY0_Pin) )
-			{
-				key_sta = 1;
-			}
-			break;
-		case 1: //key down wait release.
-			if( 0 == HAL_GPIO_ReadPin(KEY0_GPIO_Port, KEY0_Pin) )
-			{
-				key_sta = 2;
-				key_cnt++;
-			}
-			else
-			{
-				key_sta = 0;
-			}
-			break;
-		case 2: 
-			if( 0 != HAL_GPIO_ReadPin(KEY0_GPIO_Port, KEY0_Pin) )
-			{
-				key_sta = 0;
-			}
-			break;
-	}
-	if(key_cnt>10)
-		key_cnt = 0;
-#if defined CAN_CONTROL
-	set_spd[0] = set_spd[1] = set_spd[2] = set_spd[3] = key_cnt*500;
-#elif defined PWM_CONTROL
-    set_spd[0] = set_spd[1] = set_spd[2] = set_spd[3] = key_cnt*50;
-#endif    
-	
-	osDelay(10);
+//		
+//		#if defined CAN_CONTROL
+//		  
+//			for(int i=0; i<4; i++)
+//			{
+//				pid_calc(&pid_spd[i], moto_chassis[i].speed_rpm, set_spd[i]);
+//			}
+//			set_moto_current(&hcan1, pid_spd[0].pos_out, 
+//									pid_spd[1].pos_out,
+//									pid_spd[2].pos_out,
+//									pid_spd[3].pos_out);
+//		  
+////		#elif defined PWM_CONTROL
+////			__HAL_TIM_SetCompare(&htim5, TIM_CHANNEL_1, 1000+set_spd[0]);//spd range[0,999]
+////			__HAL_TIM_SetCompare(&htim5, TIM_CHANNEL_2, 1000+set_spd[1]);
+////			__HAL_TIM_SetCompare(&htim5, TIM_CHANNEL_3, 1000+set_spd[2]);
+////			__HAL_TIM_SetCompare(&htim5, TIM_CHANNEL_4, 1000+set_spd[3]);
+////			//TIM5->CCR1 = set_spd[0];
+//		#endif
+//	
+//	static int key_sta,key_cnt;
+//	switch(key_sta)
+//	{
+//		case 0:	//no key
+//			if( 0 == HAL_GPIO_ReadPin(KEY0_GPIO_Port, KEY0_Pin) )
+//			{
+//				key_sta = 1;
+//			}
+//			break;
+//		case 1: //key down wait release.
+//			if( 0 == HAL_GPIO_ReadPin(KEY0_GPIO_Port, KEY0_Pin) )
+//			{
+//				key_sta = 2;
+//				key_cnt++;
+//			}
+//			else
+//			{
+//				key_sta = 0;
+//			}
+//			break;
+//		case 2: 
+//			if( 0 != HAL_GPIO_ReadPin(KEY0_GPIO_Port, KEY0_Pin) )
+//			{
+//				key_sta = 0;
+//			}
+//			break;
+//	}
+//	if(key_cnt>10)
+//		key_cnt = 0;
+//#if defined CAN_CONTROL
+//	set_spd[0] = set_spd[1] = set_spd[2] = set_spd[3] = key_cnt*500;
+//#elif defined PWM_CONTROL
+//    set_spd[0] = set_spd[1] = set_spd[2] = set_spd[3] = key_cnt*50;
+//#endif    
+//	
+//	osDelay(10);
   }
   /* USER CODE END StartDefaultTask */
 }

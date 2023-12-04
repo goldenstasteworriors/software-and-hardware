@@ -50,4 +50,6 @@ demo\main.o: ../Middlewares/Third_Party/FreeRTOS/Source/include/semphr.h
 demo\main.o: ../Middlewares/Third_Party/FreeRTOS/Source/include/event_groups.h
 demo\main.o: ../Inc/can.h
 demo\main.o: ../Inc/tim.h
+demo\main.o: ../Inc/usart.h
 demo\main.o: ../Inc/gpio.h
+demo\main.o: D:\Keil_v5\ARM\ARMCC\Bin\..\include\string.h
