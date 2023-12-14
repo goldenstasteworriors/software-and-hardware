@@ -1,5 +1,5 @@
 Dependencies for Project 'Tb6612demo', Target 'Tb6612demo': (DO NOT MODIFY !)
-F (.\main.c)(0x6579B992)(-c --cpu Cortex-M3 -g -O0 --apcs=interwork --split_sections -I ..\CORE -I ..\USER -I ..\STM32F10x_FWLIB\inc -I ..\SYSTEM\delay -I ..\SYSTEM\sys -I ..\SYSTEM\usart -I ..\HAREWER\MOTO -I ..\HAREWER\PWM -I ..\HAREWER\GPIO -I ..\HAREWER\ADC -I ..\HAREWER\ENCODER-I.\RTE\_Tb6612demo-ID:\Keil_v5\ARM\PACK\Keil\STM32F1xx_DFP\2.2.0\Device\Include-ID:\Keil_v5\ARM\CMSIS\Include-ID:\Keil_v5\ARM\PACK\Keil\STM32F1xx_DFP\2.2.0-D__UVISION_VERSION="524" -DSTM32F10X_MD -DSTM32F10X_MD -DUSE_STDPERIPH_DRIVER-o ..\obj\main.o --omf_browse ..\obj\main.crf --depend ..\obj\main.d)
+F (.\main.c)(0x6579BCD6)(-c --cpu Cortex-M3 -g -O0 --apcs=interwork --split_sections -I ..\CORE -I ..\USER -I ..\STM32F10x_FWLIB\inc -I ..\SYSTEM\delay -I ..\SYSTEM\sys -I ..\SYSTEM\usart -I ..\HAREWER\MOTO -I ..\HAREWER\PWM -I ..\HAREWER\GPIO -I ..\HAREWER\ADC -I ..\HAREWER\ENCODER-I.\RTE\_Tb6612demo-ID:\Keil_v5\ARM\PACK\Keil\STM32F1xx_DFP\2.2.0\Device\Include-ID:\Keil_v5\ARM\CMSIS\Include-ID:\Keil_v5\ARM\PACK\Keil\STM32F1xx_DFP\2.2.0-D__UVISION_VERSION="524" -DSTM32F10X_MD -DSTM32F10X_MD -DUSE_STDPERIPH_DRIVER-o ..\obj\main.o --omf_browse ..\obj\main.crf --depend ..\obj\main.d)
 I (stm32f10x.h)(0x65685643)
 I (..\CORE\core_cm3.h)(0x5E8160D0)
 I (D:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x588B8344)
@@ -32,12 +32,12 @@ I (..\STM32F10x_FWLIB\inc\misc.h)(0x5E8160C6)
 I (..\SYSTEM\delay\delay.h)(0x5E8160BE)
 I (..\SYSTEM\sys\sys.h)(0x5E8160BE)
 I (..\HAREWER\GPIO\gpio.h)(0x5E8160CE)
-I (..\HAREWER\MOTO\moto.h)(0x6579B992)
-I (..\HAREWER\PWM\pwm.h)(0x64803F38)
-I (..\HAREWER\ADC\adc.h)(0x61316DD4)
+I (..\HAREWER\MOTO\moto.h)(0x6579BA70)
+I (..\HAREWER\PWM\pwm.h)(0x65793588)
+I (..\HAREWER\ADC\adc.h)(0x65787EE3)
 I (..\SYSTEM\usart\usart.h)(0x5E8160BE)
 I (D:\Keil_v5\ARM\ARMCC\include\stdio.h)(0x588B8344)
-I (..\HAREWER\ENCODER\encoder.h)(0x63462AFC)
+I (..\HAREWER\ENCODER\encoder.h)(0x65787C98)
 F (.\stm32f10x_it.c)(0x5E8160BA)(-c --cpu Cortex-M3 -g -O0 --apcs=interwork --split_sections -I ..\CORE -I ..\USER -I ..\STM32F10x_FWLIB\inc -I ..\SYSTEM\delay -I ..\SYSTEM\sys -I ..\SYSTEM\usart -I ..\HAREWER\MOTO -I ..\HAREWER\PWM -I ..\HAREWER\GPIO -I ..\HAREWER\ADC -I ..\HAREWER\ENCODER-I.\RTE\_Tb6612demo-ID:\Keil_v5\ARM\PACK\Keil\STM32F1xx_DFP\2.2.0\Device\Include-ID:\Keil_v5\ARM\CMSIS\Include-ID:\Keil_v5\ARM\PACK\Keil\STM32F1xx_DFP\2.2.0-D__UVISION_VERSION="524" -DSTM32F10X_MD -DSTM32F10X_MD -DUSE_STDPERIPH_DRIVER-o ..\obj\stm32f10x_it.o --omf_browse ..\obj\stm32f10x_it.crf --depend ..\obj\stm32f10x_it.d)
 I (stm32f10x_it.h)(0x5E8160BA)
 I (stm32f10x.h)(0x65685643)
@@ -830,7 +830,7 @@ I (..\STM32F10x_FWLIB\inc\stm32f10x_tim.h)(0x5E8160CC)
 I (..\STM32F10x_FWLIB\inc\stm32f10x_usart.h)(0x5E8160CC)
 I (..\STM32F10x_FWLIB\inc\stm32f10x_wwdg.h)(0x5E8160CC)
 I (..\STM32F10x_FWLIB\inc\misc.h)(0x5E8160C6)
-F (..\SYSTEM\usart\usart.c)(0x5E8160BC)(-c --cpu Cortex-M3 -g -O0 --apcs=interwork --split_sections -I ..\CORE -I ..\USER -I ..\STM32F10x_FWLIB\inc -I ..\SYSTEM\delay -I ..\SYSTEM\sys -I ..\SYSTEM\usart -I ..\HAREWER\MOTO -I ..\HAREWER\PWM -I ..\HAREWER\GPIO -I ..\HAREWER\ADC -I ..\HAREWER\ENCODER-I.\RTE\_Tb6612demo-ID:\Keil_v5\ARM\PACK\Keil\STM32F1xx_DFP\2.2.0\Device\Include-ID:\Keil_v5\ARM\CMSIS\Include-ID:\Keil_v5\ARM\PACK\Keil\STM32F1xx_DFP\2.2.0-D__UVISION_VERSION="524" -DSTM32F10X_MD -DSTM32F10X_MD -DUSE_STDPERIPH_DRIVER-o ..\obj\usart.o --omf_browse ..\obj\usart.crf --depend ..\obj\usart.d)
+F (..\SYSTEM\usart\usart.c)(0x6578767B)(-c --cpu Cortex-M3 -g -O0 --apcs=interwork --split_sections -I ..\CORE -I ..\USER -I ..\STM32F10x_FWLIB\inc -I ..\SYSTEM\delay -I ..\SYSTEM\sys -I ..\SYSTEM\usart -I ..\HAREWER\MOTO -I ..\HAREWER\PWM -I ..\HAREWER\GPIO -I ..\HAREWER\ADC -I ..\HAREWER\ENCODER-I.\RTE\_Tb6612demo-ID:\Keil_v5\ARM\PACK\Keil\STM32F1xx_DFP\2.2.0\Device\Include-ID:\Keil_v5\ARM\CMSIS\Include-ID:\Keil_v5\ARM\PACK\Keil\STM32F1xx_DFP\2.2.0-D__UVISION_VERSION="524" -DSTM32F10X_MD -DSTM32F10X_MD -DUSE_STDPERIPH_DRIVER-o ..\obj\usart.o --omf_browse ..\obj\usart.crf --depend ..\obj\usart.d)
 I (..\SYSTEM\sys\sys.h)(0x5E8160BE)
 I (..\USER\stm32f10x.h)(0x65685643)
 I (..\CORE\core_cm3.h)(0x5E8160D0)
@@ -862,8 +862,8 @@ I (..\STM32F10x_FWLIB\inc\stm32f10x_wwdg.h)(0x5E8160CC)
 I (..\STM32F10x_FWLIB\inc\misc.h)(0x5E8160C6)
 I (..\SYSTEM\usart\usart.h)(0x5E8160BE)
 I (D:\Keil_v5\ARM\ARMCC\include\stdio.h)(0x588B8344)
-F (..\HAREWER\MOTO\moto.c)(0x6579B992)(-c --cpu Cortex-M3 -g -O0 --apcs=interwork --split_sections -I ..\CORE -I ..\USER -I ..\STM32F10x_FWLIB\inc -I ..\SYSTEM\delay -I ..\SYSTEM\sys -I ..\SYSTEM\usart -I ..\HAREWER\MOTO -I ..\HAREWER\PWM -I ..\HAREWER\GPIO -I ..\HAREWER\ADC -I ..\HAREWER\ENCODER-I.\RTE\_Tb6612demo-ID:\Keil_v5\ARM\PACK\Keil\STM32F1xx_DFP\2.2.0\Device\Include-ID:\Keil_v5\ARM\CMSIS\Include-ID:\Keil_v5\ARM\PACK\Keil\STM32F1xx_DFP\2.2.0-D__UVISION_VERSION="524" -DSTM32F10X_MD -DSTM32F10X_MD -DUSE_STDPERIPH_DRIVER-o ..\obj\moto.o --omf_browse ..\obj\moto.crf --depend ..\obj\moto.d)
-I (..\HAREWER\MOTO\moto.h)(0x6579B992)
+F (..\HAREWER\MOTO\moto.c)(0x6579BA70)(-c --cpu Cortex-M3 -g -O0 --apcs=interwork --split_sections -I ..\CORE -I ..\USER -I ..\STM32F10x_FWLIB\inc -I ..\SYSTEM\delay -I ..\SYSTEM\sys -I ..\SYSTEM\usart -I ..\HAREWER\MOTO -I ..\HAREWER\PWM -I ..\HAREWER\GPIO -I ..\HAREWER\ADC -I ..\HAREWER\ENCODER-I.\RTE\_Tb6612demo-ID:\Keil_v5\ARM\PACK\Keil\STM32F1xx_DFP\2.2.0\Device\Include-ID:\Keil_v5\ARM\CMSIS\Include-ID:\Keil_v5\ARM\PACK\Keil\STM32F1xx_DFP\2.2.0-D__UVISION_VERSION="524" -DSTM32F10X_MD -DSTM32F10X_MD -DUSE_STDPERIPH_DRIVER-o ..\obj\moto.o --omf_browse ..\obj\moto.crf --depend ..\obj\moto.d)
+I (..\HAREWER\MOTO\moto.h)(0x6579BA70)
 I (..\USER\stm32f10x.h)(0x65685643)
 I (..\CORE\core_cm3.h)(0x5E8160D0)
 I (D:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x588B8344)
@@ -892,8 +892,8 @@ I (..\STM32F10x_FWLIB\inc\stm32f10x_tim.h)(0x5E8160CC)
 I (..\STM32F10x_FWLIB\inc\stm32f10x_usart.h)(0x5E8160CC)
 I (..\STM32F10x_FWLIB\inc\stm32f10x_wwdg.h)(0x5E8160CC)
 I (..\STM32F10x_FWLIB\inc\misc.h)(0x5E8160C6)
-F (..\HAREWER\PWM\pwm.c)(0x646C60AE)(-c --cpu Cortex-M3 -g -O0 --apcs=interwork --split_sections -I ..\CORE -I ..\USER -I ..\STM32F10x_FWLIB\inc -I ..\SYSTEM\delay -I ..\SYSTEM\sys -I ..\SYSTEM\usart -I ..\HAREWER\MOTO -I ..\HAREWER\PWM -I ..\HAREWER\GPIO -I ..\HAREWER\ADC -I ..\HAREWER\ENCODER-I.\RTE\_Tb6612demo-ID:\Keil_v5\ARM\PACK\Keil\STM32F1xx_DFP\2.2.0\Device\Include-ID:\Keil_v5\ARM\CMSIS\Include-ID:\Keil_v5\ARM\PACK\Keil\STM32F1xx_DFP\2.2.0-D__UVISION_VERSION="524" -DSTM32F10X_MD -DSTM32F10X_MD -DUSE_STDPERIPH_DRIVER-o ..\obj\pwm.o --omf_browse ..\obj\pwm.crf --depend ..\obj\pwm.d)
-I (..\HAREWER\PWM\pwm.h)(0x64803F38)
+F (..\HAREWER\PWM\pwm.c)(0x65793588)(-c --cpu Cortex-M3 -g -O0 --apcs=interwork --split_sections -I ..\CORE -I ..\USER -I ..\STM32F10x_FWLIB\inc -I ..\SYSTEM\delay -I ..\SYSTEM\sys -I ..\SYSTEM\usart -I ..\HAREWER\MOTO -I ..\HAREWER\PWM -I ..\HAREWER\GPIO -I ..\HAREWER\ADC -I ..\HAREWER\ENCODER-I.\RTE\_Tb6612demo-ID:\Keil_v5\ARM\PACK\Keil\STM32F1xx_DFP\2.2.0\Device\Include-ID:\Keil_v5\ARM\CMSIS\Include-ID:\Keil_v5\ARM\PACK\Keil\STM32F1xx_DFP\2.2.0-D__UVISION_VERSION="524" -DSTM32F10X_MD -DSTM32F10X_MD -DUSE_STDPERIPH_DRIVER-o ..\obj\pwm.o --omf_browse ..\obj\pwm.crf --depend ..\obj\pwm.d)
+I (..\HAREWER\PWM\pwm.h)(0x65793588)
 I (..\USER\stm32f10x.h)(0x65685643)
 I (..\CORE\core_cm3.h)(0x5E8160D0)
 I (D:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x588B8344)
@@ -922,7 +922,7 @@ I (..\STM32F10x_FWLIB\inc\stm32f10x_tim.h)(0x5E8160CC)
 I (..\STM32F10x_FWLIB\inc\stm32f10x_usart.h)(0x5E8160CC)
 I (..\STM32F10x_FWLIB\inc\stm32f10x_wwdg.h)(0x5E8160CC)
 I (..\STM32F10x_FWLIB\inc\misc.h)(0x5E8160C6)
-F (..\HAREWER\GPIO\gpio.c)(0x63526C82)(-c --cpu Cortex-M3 -g -O0 --apcs=interwork --split_sections -I ..\CORE -I ..\USER -I ..\STM32F10x_FWLIB\inc -I ..\SYSTEM\delay -I ..\SYSTEM\sys -I ..\SYSTEM\usart -I ..\HAREWER\MOTO -I ..\HAREWER\PWM -I ..\HAREWER\GPIO -I ..\HAREWER\ADC -I ..\HAREWER\ENCODER-I.\RTE\_Tb6612demo-ID:\Keil_v5\ARM\PACK\Keil\STM32F1xx_DFP\2.2.0\Device\Include-ID:\Keil_v5\ARM\CMSIS\Include-ID:\Keil_v5\ARM\PACK\Keil\STM32F1xx_DFP\2.2.0-D__UVISION_VERSION="524" -DSTM32F10X_MD -DSTM32F10X_MD -DUSE_STDPERIPH_DRIVER-o ..\obj\gpio.o --omf_browse ..\obj\gpio.crf --depend ..\obj\gpio.d)
+F (..\HAREWER\GPIO\gpio.c)(0x65787702)(-c --cpu Cortex-M3 -g -O0 --apcs=interwork --split_sections -I ..\CORE -I ..\USER -I ..\STM32F10x_FWLIB\inc -I ..\SYSTEM\delay -I ..\SYSTEM\sys -I ..\SYSTEM\usart -I ..\HAREWER\MOTO -I ..\HAREWER\PWM -I ..\HAREWER\GPIO -I ..\HAREWER\ADC -I ..\HAREWER\ENCODER-I.\RTE\_Tb6612demo-ID:\Keil_v5\ARM\PACK\Keil\STM32F1xx_DFP\2.2.0\Device\Include-ID:\Keil_v5\ARM\CMSIS\Include-ID:\Keil_v5\ARM\PACK\Keil\STM32F1xx_DFP\2.2.0-D__UVISION_VERSION="524" -DSTM32F10X_MD -DSTM32F10X_MD -DUSE_STDPERIPH_DRIVER-o ..\obj\gpio.o --omf_browse ..\obj\gpio.crf --depend ..\obj\gpio.d)
 I (..\HAREWER\GPIO\gpio.h)(0x5E8160CE)
 I (..\USER\stm32f10x.h)(0x65685643)
 I (..\CORE\core_cm3.h)(0x5E8160D0)
@@ -952,8 +952,8 @@ I (..\STM32F10x_FWLIB\inc\stm32f10x_tim.h)(0x5E8160CC)
 I (..\STM32F10x_FWLIB\inc\stm32f10x_usart.h)(0x5E8160CC)
 I (..\STM32F10x_FWLIB\inc\stm32f10x_wwdg.h)(0x5E8160CC)
 I (..\STM32F10x_FWLIB\inc\misc.h)(0x5E8160C6)
-F (..\HAREWER\ADC\adc.c)(0x636C5A20)(-c --cpu Cortex-M3 -g -O0 --apcs=interwork --split_sections -I ..\CORE -I ..\USER -I ..\STM32F10x_FWLIB\inc -I ..\SYSTEM\delay -I ..\SYSTEM\sys -I ..\SYSTEM\usart -I ..\HAREWER\MOTO -I ..\HAREWER\PWM -I ..\HAREWER\GPIO -I ..\HAREWER\ADC -I ..\HAREWER\ENCODER-I.\RTE\_Tb6612demo-ID:\Keil_v5\ARM\PACK\Keil\STM32F1xx_DFP\2.2.0\Device\Include-ID:\Keil_v5\ARM\CMSIS\Include-ID:\Keil_v5\ARM\PACK\Keil\STM32F1xx_DFP\2.2.0-D__UVISION_VERSION="524" -DSTM32F10X_MD -DSTM32F10X_MD -DUSE_STDPERIPH_DRIVER-o ..\obj\adc.o --omf_browse ..\obj\adc.crf --depend ..\obj\adc.d)
-I (..\HAREWER\ADC\adc.h)(0x61316DD4)
+F (..\HAREWER\ADC\adc.c)(0x65787EFF)(-c --cpu Cortex-M3 -g -O0 --apcs=interwork --split_sections -I ..\CORE -I ..\USER -I ..\STM32F10x_FWLIB\inc -I ..\SYSTEM\delay -I ..\SYSTEM\sys -I ..\SYSTEM\usart -I ..\HAREWER\MOTO -I ..\HAREWER\PWM -I ..\HAREWER\GPIO -I ..\HAREWER\ADC -I ..\HAREWER\ENCODER-I.\RTE\_Tb6612demo-ID:\Keil_v5\ARM\PACK\Keil\STM32F1xx_DFP\2.2.0\Device\Include-ID:\Keil_v5\ARM\CMSIS\Include-ID:\Keil_v5\ARM\PACK\Keil\STM32F1xx_DFP\2.2.0-D__UVISION_VERSION="524" -DSTM32F10X_MD -DSTM32F10X_MD -DUSE_STDPERIPH_DRIVER-o ..\obj\adc.o --omf_browse ..\obj\adc.crf --depend ..\obj\adc.d)
+I (..\HAREWER\ADC\adc.h)(0x65787EE3)
 I (..\USER\stm32f10x.h)(0x65685643)
 I (..\CORE\core_cm3.h)(0x5E8160D0)
 I (D:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x588B8344)
@@ -986,8 +986,8 @@ I (..\SYSTEM\delay\delay.h)(0x5E8160BE)
 I (..\SYSTEM\sys\sys.h)(0x5E8160BE)
 I (..\SYSTEM\usart\usart.h)(0x5E8160BE)
 I (D:\Keil_v5\ARM\ARMCC\include\stdio.h)(0x588B8344)
-F (..\HAREWER\ENCODER\encoder.c)(0x657929EF)(-c --cpu Cortex-M3 -g -O0 --apcs=interwork --split_sections -I ..\CORE -I ..\USER -I ..\STM32F10x_FWLIB\inc -I ..\SYSTEM\delay -I ..\SYSTEM\sys -I ..\SYSTEM\usart -I ..\HAREWER\MOTO -I ..\HAREWER\PWM -I ..\HAREWER\GPIO -I ..\HAREWER\ADC -I ..\HAREWER\ENCODER-I.\RTE\_Tb6612demo-ID:\Keil_v5\ARM\PACK\Keil\STM32F1xx_DFP\2.2.0\Device\Include-ID:\Keil_v5\ARM\CMSIS\Include-ID:\Keil_v5\ARM\PACK\Keil\STM32F1xx_DFP\2.2.0-D__UVISION_VERSION="524" -DSTM32F10X_MD -DSTM32F10X_MD -DUSE_STDPERIPH_DRIVER-o ..\obj\encoder.o --omf_browse ..\obj\encoder.crf --depend ..\obj\encoder.d)
-I (..\HAREWER\ENCODER\encoder.h)(0x63462AFC)
+F (..\HAREWER\ENCODER\encoder.c)(0x6579BC40)(-c --cpu Cortex-M3 -g -O0 --apcs=interwork --split_sections -I ..\CORE -I ..\USER -I ..\STM32F10x_FWLIB\inc -I ..\SYSTEM\delay -I ..\SYSTEM\sys -I ..\SYSTEM\usart -I ..\HAREWER\MOTO -I ..\HAREWER\PWM -I ..\HAREWER\GPIO -I ..\HAREWER\ADC -I ..\HAREWER\ENCODER-I.\RTE\_Tb6612demo-ID:\Keil_v5\ARM\PACK\Keil\STM32F1xx_DFP\2.2.0\Device\Include-ID:\Keil_v5\ARM\CMSIS\Include-ID:\Keil_v5\ARM\PACK\Keil\STM32F1xx_DFP\2.2.0-D__UVISION_VERSION="524" -DSTM32F10X_MD -DSTM32F10X_MD -DUSE_STDPERIPH_DRIVER-o ..\obj\encoder.o --omf_browse ..\obj\encoder.crf --depend ..\obj\encoder.d)
+I (..\HAREWER\ENCODER\encoder.h)(0x65787C98)
 I (..\USER\stm32f10x.h)(0x65685643)
 I (..\CORE\core_cm3.h)(0x5E8160D0)
 I (D:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x588B8344)

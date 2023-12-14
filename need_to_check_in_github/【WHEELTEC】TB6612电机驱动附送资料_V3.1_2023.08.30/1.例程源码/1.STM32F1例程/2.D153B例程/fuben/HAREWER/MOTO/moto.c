@@ -98,7 +98,6 @@ int Velocity_B(int TargetVelocity, int CurrentVelocity)
 	
 }
 
-
 int Velocity_C(int TargetVelocity, int CurrentVelocity)
 {
 		int Bias;  //定义相关变量

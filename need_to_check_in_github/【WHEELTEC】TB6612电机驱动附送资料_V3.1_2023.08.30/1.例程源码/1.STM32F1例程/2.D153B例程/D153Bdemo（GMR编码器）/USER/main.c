@@ -34,8 +34,8 @@ int main(void)
    Encoder_Init_Tim4();
   while(1)
 	{
-//   moto(0);                //moto=0时正转
-//	    moto(1);                //moto=1时反转
+//      moto1(0);                //moto=0时正转
+//	    moto1(1);                //moto=1时反转
 
 		adcx=Get_adc_Average(ADC_Channel_6,10);  //获取adc的值
 		vcc=(float)adcx*(3.3*11/4096);     				//求当前电压
