@@ -50,7 +50,7 @@ void Set_PWM(int motor1,int motor2,int motor3,int motor4)
 {
 	TIM_SetCompare1(TIM5,motor1);
 	TIM_SetCompare2(TIM5,motor2);
-    TIM_SetCompare3(TIM5,motor3);//设置TIM3通道3的占空比  3000/7200
+    TIM_SetCompare3(TIM5,motor3);//设置TIM5通道3的占空比  3000/7200
     TIM_SetCompare4(TIM5,motor4);
 	
 }

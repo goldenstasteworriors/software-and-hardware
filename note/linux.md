@@ -38,7 +38,7 @@ ctrl+-  ：缩小窗口
 
 #### ==退出编辑：ctrl+c==
 
-![image-20230117175642919](C:\Users\86180\Desktop\my\note\image-20230117175642919.png)
+![image-20230117175642919](C:\Users\asus\OneDrive\桌面\NEW_MY\software-and-hardware\note\image-20230117175642919.png)
 
 （注意：cd是进入现在所在文件夹下的子文件夹而不是可以随便跳，估计这是因为同文件夹下的文件夹不能同名的原因之一；而且想要往回退就需要输入从/home开始的绝对路径，或者用`..`）
 
@@ -46,7 +46,7 @@ ctrl+-  ：缩小窗口
 
 一般的终端命令格式：
 
-![image-20230117220448704](C:\Users\86180\Desktop\my\note\image-20230117220448704.png)
+![C:\Users\asus\OneDrive\桌面\NEW_MY\software-and-hardware\note\image-20230117220448704.png)
 
 记得选项前的-和两端的空格.
 

@@ -4,7 +4,7 @@
 
 效果:能使用USART1正常发送接收，并把我们发送的信息显示在串口上；可以使用printf,scanf	函数
 
-注:==要用此法记得勾选USART1的NVIC==
+注:==要用此法记得勾选USART1的NVIC==，且只能用于USART1的PA9,PA10引脚
 
 C:\Users\86180\Desktop\KEIL project\USART
 
@@ -73,3 +73,13 @@ main.c 99 OLED初始化
 
 
 后面再出问题就到定义/网上查
+
+
+
+
+
+## CAN
+
+如果正常写完发现收不到有可能有个极其离谱的玄学原因:JWD，BS1,BS2配比。
+
+参考:72M分1M：1，9，8

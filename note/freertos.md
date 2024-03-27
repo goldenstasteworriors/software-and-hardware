@@ -1,6 +1,6 @@
 @[toc](freertos)
 
-裸机中要执行两个任务要先完成a再3完成b，但是freertos中可以把a和b划分成多个小步骤然后每次一个步骤来执行
+裸机中要执行两个任务要先完成a再完成b，但是freertos中可以把a和b划分成多个小步骤然后每次一个步骤来执行；在裸机中完成会互相影响的操作(延时实现灯的)
 
 要实现freertos要理解cpu，也有厂商用内存块开发不过少，大部分还是用的arm内核
 
@@ -18,7 +18,7 @@ freertos是实时操作系统，它只实现了基本的内核功能，在产品
 
 栈：无名英雄
 
-![image-20231003094201877](C:/Users/zhangjiejie666/Desktop/freertos/image-20231003094201877.png)
+![image-20231003094201877](C:\Users\asus\OneDrive\桌面\NEW_MY\pictrue\image-20231003094201877.png)
 
 如在以上代码中，在调用函数前需要先将下一行语句保存在LR(LinkRegister)(一个寄存器)中，不然调用完都不知道去哪。但是在这里，main调用a_fun,a_fun调用b_fun，导致LR会被覆盖，解决方式就是在要存下一个LR时(这里是a_fun中)(在a_fun内部)将的LR入栈(具体可以看汇编)
 
@@ -30,7 +30,7 @@ freertos是实时操作系统，它只实现了基本的内核功能，在产品
 
 实际来看汇编
 
-![image-20231003100336694](C:/Users/zhangjiejie666/Desktop/freertos/image-20231003100336694.png)
+![image-20231003100336694](C:\Users\asus\OneDrive/桌面/NEW_MY/freertos_study/freertos/image-20231003100336694.png)
 
 设置SP即在内存中设置栈；BL main会 1. LR=返回地址 2. 执行main    ；在main函数中，会首先划出自己的栈，比如划到SP-N(栈是从栈顶算下来的)，在这些栈中保存LR等寄存器和局部变量；后面函数也是一样的，比如a之前也会 1. LR=返回地址 2. 执行a_fun
 
@@ -44,13 +44,13 @@ freertos是实时操作系统，它只实现了基本的内核功能，在产品
 
 编程规范：
 
-![image-20231003215128248](C:/Users/zhangjiejie666/Desktop/freertos/image-20231003215128248.png)
+![image-20231003215128248](C:\Users\asus\OneDrive\桌面\NEW_MY\pictrue\image-20231003215128248.png)
 
-![image-20231003215143692](C:/Users/zhangjiejie666/Desktop/freertos/image-20231003215143692.png)
+![image-20231003215143692](C:\Users\asus\OneDrive\桌面\NEW_MY\pictrue\image-20231003215143692.png)
 
 函数名的前缀有2部分：返回值类型、在哪个文件定义。  
 
-![image-20231003215200923](C:/Users/zhangjiejie666/Desktop/freertos/image-20231003215200923.png)
+![image-20231003215200923](C:\Users\asus\OneDrive\桌面\NEW_MY\pictrue\image-20231003215200923.png)
 
 
 
@@ -66,15 +66,15 @@ freertos是实时操作系统，它只实现了基本的内核功能，在产品
 
 使用动态内存创建任务
 
-![image-20231003203739227](C:/Users/zhangjiejie666/Desktop/freertos/image-20231003203739227.png)
+![image-20231218211818156](C:\Users\asus\OneDrive\桌面\NEW_MY\pictrue\image-20231218211818156.png)
 
-这个任务句柄就是TCB的指针；==优先级越小，值越小==
+最后这个参数，即任务句柄就是TCB的指针，是事先定义然后在这个函数里才与任务联系起来的，后续要控制任务都需要这个指针；==优先级越小，值越小==；pvParameters是要传进任务里的参数：如果创建成功会返回pdpass
 
 
 
 使用静态内存创建任务（需要自己给出空的内存块当栈(适合内存紧张的程序)）
 
-![image-20231003220904464](C:/Users/zhangjiejie666/Desktop/freertos/image-20231003220904464.png)
+![image-20231218213409926](C:\Users\asus\OneDrive\桌面\NEW_MY\pictrue\image-20231218213409926.png)
 
 注意这个静态创建，他没有要填任务句柄是因为他自己返回的就是它的任务句柄，可以来个变量接一下
 
@@ -98,7 +98,7 @@ freertos是实时操作系统，它只实现了基本的内核功能，在产品
 
 可以认为是rtos嘎嘎中断，中断间隔为tick(系统定时器间隔，可以配置)，定时器过了几个tick存在变量tickcount里， 执行的中断回调函数就是判断是否更换任务。我们可以指定每个任务运行的时间(必须是几个tick)。
 
-一共有四种状态:运行状态(running),准备状态(ready),暂停状态(suspended),阻塞状态(blocked)。前两个很好理解，后两个的区别就是阻塞状态是在等待某些事情发生(就像等待标志位)，暂停状态是主动或被动休息(其实暂停状态的suspended也可以理解为挂起，这样就好理解多了)，转换图如下：![image-20231004210007475](C:/Users/zhangjiejie666/Desktop/freertos/image-20231004210007475.png)
+一共有四种状态:运行状态(running),准备状态(ready),暂停状态(suspended),阻塞状态(blocked)。前两个很好理解，后两个的区别就是阻塞状态是在等待某些事情发生(就像等待标志位)，暂停状态是主动或被动休息(其实暂停状态的suspended也可以理解为挂起，这样就好理解多了)，转换图如下：![image-20231004210007475](C:\Users\asus\OneDrive\桌面\NEW_MY\pictrue\image-20231004210007475.png)
 
 任务的管理方式是链表，当某个任务要执行时就会从链表里拿出来执行
 
@@ -139,9 +139,9 @@ vTaskDelay(t)延迟的时间***delta***t是确定的,vTaskDelay(t1,t2)确定的�
 
 任务调度算法的选取主要是靠FreeRtosConfig里的几个宏定义的取值实现的，具体来说：
 
-![image-20231004233547355](C:/Users/zhangjiejie666/Desktop/freertos/image-20231004233547355.png)
+![image-20231004233547355](C:\Users\asus\OneDrive\桌面\NEW_MY\pictrue\image-20231004233547355-17114566671511.png)
 
-![image-20231004233611604](C:/Users/zhangjiejie666/Desktop/freertos/image-20231004233611604.png)
+![image-20231004233611604](C:\Users\asus\OneDrive\桌面\NEW_MY\pictrue\image-20231004233611604.png)
 
 
 
