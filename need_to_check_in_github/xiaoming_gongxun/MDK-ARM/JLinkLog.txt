@@ -1,0 +1,95 @@
+TF524 000:160.850   SEGGER J-Link V7.22b Log File
+TF524 000:160.963   DLL Compiled: Jun 17 2021 17:22:49
+TF524 000:160.973   Logging started @ 2023-03-02 08:02
+TF524 000:160.982 - 160.987ms
+TF524 000:160.997 JLINK_SetWarnOutHandler(...)
+TF524 000:161.007 - 0.015ms
+TF524 000:161.018 JLINK_OpenEx(...)
+TF524 000:165.917   TELNET listener socket opened on port 19021
+TF524 000:166.042   WEBSRV Starting webserver
+TF524 000:166.174   WEBSRV Webserver running on local port 19080
+TF524 000:166.193 - 5.180ms returns "O.K."
+TF524 000:166.215 JLINK_GetEmuCaps()
+TF524 000:166.225 - 0.015ms returns 0x98E61B83
+TF524 000:166.238 JLINK_TIF_GetAvailable(...)
+TF524 000:166.248 - 0.014ms
+TF524 000:166.259 JLINK_SetErrorOutHandler(...)
+TF524 000:166.268 - 0.014ms
+TF524 000:166.295 JLINK_ExecCommand("ProjectFile = "C:\Users\chuhao\Desktop\工训11.1\工训10.7\工训10.5\工训10.1\MDK-ARM\JLinkSettings.ini"", ...). 
+TF524 000:176.486 - 10.211ms returns 0x00
+TF524 000:176.525 JLINK_ExecCommand("Device = STM32F427IIHx", ...). 
+TF524 000:177.045   Device "STM32F427II" selected.
+TF524 000:177.285 - 0.757ms returns 0x00
+TF524 000:177.307 JLINK_GetHardwareVersion()
+TF524 000:179.484 - 2.197ms returns 20000
+TF524 000:179.528 JLINK_GetDLLVersion()
+TF524 000:179.537 - 0.013ms returns 72202
+TF524 000:179.547 JLINK_GetOEMString(...)
+TF524 000:179.558 JLINK_GetFirmwareString(...)
+TF524 000:179.569 - 0.015ms
+TF524 000:179.584 JLINK_GetDLLVersion()
+TF524 000:179.593 - 0.013ms returns 72202
+TF524 000:179.602 JLINK_GetCompileDateTime()
+TF524 000:179.612 - 0.013ms
+TF524 000:179.623 JLINK_GetFirmwareString(...)
+TF524 000:179.632 - 0.013ms
+TF524 000:179.642 JLINK_GetHardwareVersion()
+TF524 000:179.651 - 0.013ms returns 20000
+TF524 000:179.662 JLINK_GetSN()
+TF524 000:179.671 - 0.013ms returns 1047633823
+TF524 000:179.682 JLINK_GetOEMString(...)
+TF524 002:231.903 JLINK_TIF_Select(JLINKARM_TIF_JTAG)
+TF524 002:231.958   
+  ***** Error: 
+TF524 002:231.973   Debugger tries to select target interface JTAG.
+This interface is not supported by the connected emulator.
+Selection will be ignored by the DLL.
+TF524 002:231.987 - 0.089ms returns 0x01
+TF524 002:232.004 JLINK_HasError()
+TF524 002:232.027 JLINK_SetSpeed(5000)
+TF524 002:232.044 - 0.022ms
+TF524 002:232.303 JLINK_HasError()
+TF524 002:232.321 JLINK_SetResetType(JLINKARM_RESET_TYPE_NORMAL)
+TF524 002:232.332 - 0.016ms returns JLINKARM_RESET_TYPE_NORMAL
+TF524 002:232.343 JLINK_Reset()
+TF524 002:322.474   InitTarget() start
+TF524 002:322.511    J-Link Script File: Executing InitTarget()
+TF524 003:358.458   Can not attach to CPU. Trying connect under reset.
+TF524 003:562.485   Connecting to CPU via connect under reset failed.
+TF524 003:614.921   InitTarget() end
+TF524 003:678.824   InitTarget() start
+TF524 003:678.929    J-Link Script File: Executing InitTarget()
+TF524 003:832.597   Can not attach to CPU. Trying connect under reset.
+TF524 004:038.530   Connecting to CPU via connect under reset failed.
+TF524 004:091.000   InitTarget() end
+TF524 004:091.041 - 1858.702ms
+TF524 004:091.059 JLINK_GetId()
+TF524 004:092.490   InitTarget() start
+TF524 004:092.582    J-Link Script File: Executing InitTarget()
+TF524 004:248.441   Can not attach to CPU. Trying connect under reset.
+TF524 004:453.441   Connecting to CPU via connect under reset failed.
+TF524 004:506.236   InitTarget() end
+TF524 004:571.305   InitTarget() start
+TF524 004:571.413    J-Link Script File: Executing InitTarget()
+TF524 004:726.532   Can not attach to CPU. Trying connect under reset.
+TF524 004:932.464   Connecting to CPU via connect under reset failed.
+TF524 004:984.685   InitTarget() end
+TF524 004:984.810 - 893.756ms returns 0x00000000
+TF524 004:984.828 JLINK_GetId()
+TF524 004:986.486   InitTarget() start
+TF524 004:986.578    J-Link Script File: Executing InitTarget()
+TF524 005:141.490   Can not attach to CPU. Trying connect under reset.
+TF524 005:346.598   Connecting to CPU via connect under reset failed.
+TF524 005:399.058   InitTarget() end
+TF524 005:462.948   InitTarget() start
+TF524 005:463.002    J-Link Script File: Executing InitTarget()
+TF524 005:616.506   Can not attach to CPU. Trying connect under reset.
+TF524 005:821.479   Connecting to CPU via connect under reset failed.
+TF524 005:874.122   InitTarget() end
+TF524 005:874.164 - 889.340ms returns 0x00000000
+TF524 005:877.602 JLINK_GetFirmwareString(...)
+TF524 005:877.626 - 0.028ms
+TF524 008:821.477 JLINK_Close()
+TF524 008:838.522 - 17.078ms
+TF524 008:838.564   
+TF524 008:838.576   Closed

@@ -1,0 +1,4 @@
+---- yaw0 Matches (4 in 0 files) ----
+TaskMotor.c (MDK-ARM) line 16 : extern float yaw0;
+GotoXYZ in TaskMotor.c (MDK-ARM) : 		yaw0=imu.yaw;	// get_total_yaw之前必须先初始化yaw0
+GotoXYZ in TaskMotor.c (MDK-ARM) : 				printf("%f\r\n",fabs(yaw0));

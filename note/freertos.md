@@ -195,7 +195,7 @@ void Task1function(void * param)
 1. 同步：QueueReceive()阻塞不用的任务
 2. 互斥：只有一个任务能得到队列上的数据
 
-![image-20231010122634847](C:\Users\asus\OneDrive\桌面\叶康杰-RM2024狼牙招新嵌软\image-20231010122634847.png)
+![image-20231010122634847](C:\Users\asus\OneDrive\桌面\NEW_MY\pictrue\image-20231010122634847.png)
 
 相当于所有任务都可以是生产者和消费者，但一个数据只能被一个任务接收 
 
