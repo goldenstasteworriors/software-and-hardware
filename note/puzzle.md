@@ -39,17 +39,17 @@ HAL_UARTEx_RxEventCallback(UART_HandleTypeDef *huart, uint16_t Size)//串口空�
 
 ## OLED
 
-效果:实现I2C通讯的OLED使用，包括输出字符，汉字等
+效果:实现SPI通讯的OLED使用，包括输出字符，汉字等
 
-注:把.h文件加入工程的步骤:魔法棒-C++-Include Path-.h文件所属的文件夹
+为了将片选引脚CS置零，直接把它和GND相连
 
-C:\Users\86180\Desktop\KEIL project\IIC
+打开SPI，默认引脚是PA5,PA7
 
-创建三个空白文件，分别为OLED_I2C的.c/.h文件,codetab.h文件,复制对应文件
+**打开PC4,PC5作为GPIO OUTPUT，分别作为RES和DC引脚，如果需要更改，记得还需要更改oled.h里的宏定义**
 
-main.c 27-34 关于寄存器的宏定义+一些要用的引用(部分是串口的，懒得改了)
+复制bsp文件
 
-main.c 99 OLED初始化
+main.c   26，27，92-100
 
 按照想法使用OLED_I2C中的函数显示内容
 
