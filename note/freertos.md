@@ -351,3 +351,4 @@ xTaskResumeScheduler();
 ### 相关bug
 
 1. no 'read' permission：队列之类句柄的没赋值就使用了
+1. vTaskDelete函数的时候,在删除一个任务后,应当将该任务的句柄置为NULL.

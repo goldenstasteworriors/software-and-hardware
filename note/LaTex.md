@@ -71,7 +71,7 @@ md太复杂了记不住，还是直奔主线吧，下次无聊再来学。。。
 
    横省略号$\cdots$`$\cdots$`,竖省略号$\vdots$`$\vdots$`,斜省略号$\ddots$`$\ddots$`
 
-6. 大型运算符:累加：$\sum\limits_{i=0}^{n}$`$\sum_(i=0)^n$`,累乘：$\prod\limits_{i=0}^n$`$\prod_{i=0}^n$`(product)，积分:$\int$`$\int$`(integral),双重积分:$\iint$`$\iint$`,闭合曲线积分$\oint$`$\oint$`       标准的积分：$\int^1_0f(x) \,\text{dx}$
+6. 大型运算符:累加：$ \sum\limits_{i=0}^{n} $`$\sum_(i=0)^n$`,累乘：$\prod\limits_{i=0}^n$`$\prod_{i=0}^n$`(product)，积分:$\int$`$\int$`(integral),双重积分:$\iint$`$\iint$`,闭合曲线积分$\oint$`$\oint$`       标准的积分：$\int^1_0f(x) \,\text{dx}$
 
 7. 标注符号:一个字符的小向量$\vec x$`$\vec x$`(vector),,两个以上字符的向量:$\overrightarrow ABCD$(有些编辑器是对的),上划线$\overline AB$`$\overline AB$`
 
