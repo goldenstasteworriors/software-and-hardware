@@ -12,7 +12,7 @@
 
 4. ```python
            # 清空过往梯度        
-      		 optimizer.zero_grad()
+            		 optimizer.zero_grad()
            # 反向传播，计算当前梯度
            cur_loss.backward()
            # 根据梯度更新网络参数
@@ -33,3 +33,13 @@
 2. momentum动量：用来解决梯度下降太慢的问题。若不为0，梯度下降的方向不仅与当前梯度有关，还和之前梯度相关；之前是向下这次还是向下，那就会向下的更快，诸如此类
 3. step,gamma：见上面的第二点
 4. dropout的丢弃率
+
+
+
+
+
+## 相关库的常用函数
+
+
+
+### from torchvision.transforms import functional as F
