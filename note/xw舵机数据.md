@@ -537,7 +537,7 @@ dt: 0.04  pro_vel:40 pro_acc:20  M_coff[0]:4.1 M_coff[1]:3.6
 
 
 
-![image-20240510224730982](C:\Users\asus\OneDrive\桌面\NEW_MY\pictrue\image-20240510224730982.png)
+![image-20240510224730982](D:\NEW_MY\pictrue\image-20240510224730982.png)
 
 
 
@@ -545,7 +545,7 @@ dt: 0.04  pro_vel:40 pro_acc:20  M_coff[0]:4.1 M_coff[1]:3.6
 
 ### ibus
 
-![image-20240512175009552](C:\Users\asus\OneDrive\桌面\NEW_MY\pictrue\image-20240512175009552.png)
+![image-20240512175009552](D:\NEW_MY\pictrue\image-20240512175009552.png)
 
 
 
